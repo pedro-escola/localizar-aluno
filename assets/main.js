@@ -57,13 +57,14 @@ adicionarAluno("Carolina", "2º ano", 4.5, 6.5, 6.8);
 adicionarAluno("Pedro", "2º ano", 8.1, 9.9, 4.7);
 
 // mesma coisa do primeiro adicionarAlunos so que com turmas e notas diferentes :P
-adicionarAluno("Carlos", "2º ano", 8.5, 6.5, 7.2);
-adicionarAluno("Roberto", "3º ano", 6.3, 8.2, 4.6);
-adicionarAluno("Celso", "1º ano", 7.2, 9, 8);
+// e muda a ordem só pra você nunca descobrir
 adicionarAluno("Lucas", "3º ano", 7.5, 6.7, 9);
 adicionarAluno("Paulo", "2º ano", 8, 8.5, 8.6);
+adicionarAluno("Roberto", "3º ano", 6.3, 8.2, 4.6);
+adicionarAluno("Celso", "1º ano", 7.2, 9, 8);
 adicionarAluno("Eduardo", "1º ano", 6.8, 7, 6.6);
 adicionarAluno("José", "2º ano", 4.7, 6.9, 7.8);
+adicionarAluno("Carlos", "2º ano", 8.5, 6.5, 7.2);
 
 
 function encontrarAluno() {
@@ -118,6 +119,6 @@ function encontrarAluno() {
     }
 
     tabela.innerHTML += "<tr>" +
-        "<td colspan=3>Total de Alunos Encontrados:</td>" +
+        "<th colspan=3>Total de Alunos Encontrados:</th>" +
         "<td colspan=3>" + totalAlunos + "</td>"
 }
