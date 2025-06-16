@@ -8,3 +8,7 @@
 #inputNumero {
     width: 180px;
 }
+
+#reloadButton {
+    display: none;
+}

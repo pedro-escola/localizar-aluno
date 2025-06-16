@@ -72,7 +72,8 @@ function encontrarAluno() {
     turmaDigitada = Math.round(document.locateList.turma.value);
     turmaDigitada = turmaDigitada.toString();
 
-    let teste = document.getElementById("test");
+    let botao = document.getElementById("reloadButton");
+    botao.style.display = "inline-block";
 
     let tabela = document.getElementsByClassName("tabelaPrincipal").item(0);
     tabela.border = true;
@@ -121,4 +122,10 @@ function encontrarAluno() {
     tabela.innerHTML += "<tr>" +
         "<th colspan=3>Total de Alunos Encontrados:</th>" +
         "<td colspan=3>" + totalAlunos + "</td>"
+
+    
+}
+
+function recarregarPagina() {
+    location.reload();
 }
